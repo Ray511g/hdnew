@@ -179,7 +179,7 @@ export default function StaffPage() {
                                     <select
                                         title='select vender partner'
                                         value={newStaff.role}
-                                        onChange={(e) => setNewStaff({ ...newStaff, role: e.target.value })}
+                                        onChange={(e) => setNewStaff({ ...newStaff, role: e.target.value as StaffMember['role'] })}
                                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 px-6 text-white font-bold outline-none focus:border-[#f59e0b] uppercase tracking-tighter"
                                     >
                                         <option value="CASHIER">Standard Cashier</option>

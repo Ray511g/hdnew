@@ -49,7 +49,7 @@ export default function Sidebar() {
             {/* Logo Section */}
             <div className="p-8 flex items-center gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#f59e0b] flex items-center justify-center text-white shadow-lg shadow-orange-500/20 flex-shrink-0">
-                    <Hammer size={24} weight="fill" />
+                    <Hammer size={24} />
                 </div>
                 {(!isCollapsed || isMobileOpen) && (
                     <div className="font-outfit text-2xl font-black tracking-tight flex items-center">
