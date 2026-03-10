@@ -1,6 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
 
 :root {
   --background: #020617;
@@ -16,7 +20,7 @@ body {
 
 /* Premium Glassmorphism */
 .glass-card {
-  @apply bg-white/[0.03] backdrop-blur-3xl border border-white/10 shadow-2xl shadow-black/20;
+  @apply bg-white/5 backdrop-blur-3xl border border-white/10 shadow-2xl shadow-black/20;
 }
 
 /* Premium Gradients */
